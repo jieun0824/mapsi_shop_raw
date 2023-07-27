@@ -8,10 +8,13 @@ function ContentsLayout({children}){
     return(
         <div className ={styles.container}>
             <div className={styles.bg}></div>
-            <div className={styles.logo} onClick={()=>{navigate('/main')}}>
+            <div className={styles.wrap}>
+                <div className={styles.logo} onClick={()=>{navigate('/main')}}>
                 <img src={logo}/>
-            </div>
+                </div>
                 {children}
+
+            </div>
                 <footer>
                     <div className={styles.copyright}>
                     Copyright 2023.MAPSI.All right reserved.

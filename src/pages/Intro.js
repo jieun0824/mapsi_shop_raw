@@ -9,7 +9,7 @@ import pic6 from '../img/pic6.jpg';
 import pic7 from '../img/pic7.jpg';
 import logo from '../img/logo.png';
 import {useNavigate} from 'react-router-dom'
-import intro from '../img/intro.jpg';
+import intro from '../img/intro2.jpg';
 import { motion } from "framer-motion";
 
 function Intro(){

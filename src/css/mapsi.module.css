@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR&display=swap');
+
+
 .bg{
     position: fixed; 
     top: 0;       
@@ -16,7 +19,7 @@
 
 
 .explain{
-    height: 100vh;
+    min-height: calc(100%-200px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +30,7 @@
     background-color: white;
     margin: 15px 35px;
     padding: 20px;
-    height: 80vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -40,4 +43,8 @@
 
 .text{
     margin: 0 auto;
+}
+
+.title{
+    font-family: 'Archivo Black', sans-serif;
 }

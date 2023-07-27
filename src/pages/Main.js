@@ -17,20 +17,27 @@ import pic4 from '../img/pic8.jpg';
 import pic3 from '../img/pic9.jpg';
 import pic5 from '../img/pic5.jpg';
 import { motion } from "framer-motion";
+import popup1 from '../img/popup1.jpg';
+import popup2 from '../img/popup2.jpg';
+import poster from '../img/poster2.png';
 
 
 function Card(props){
   const [modalOpen, setModalOpen] = useState(false);
   const showModal = () => {
     setModalOpen(true);
+    console.log(props.key)
 };
     return(
       <div className={styles.contents}>
         <img src={props.image} className={styles.image} onClick={showModal}/>
-        {modalOpen && <Modal setModalOpen={setModalOpen} />}
+        {modalOpen && <Modal setModalOpen={setModalOpen} detailcontent = {props.data.detailcontent} detailimage={props.data.detailimage} index={props.data.id}
+        offline={props.data.offline} online={props.data.online}
+        />}
         <div className={styles.sub}>{props.data.content}</div>
         <div className={styles.bigo}>{props.data.sub}</div>
         <div className={styles.price}>{props.data.price}</div>
+
 
       </div>
     )
@@ -39,7 +46,7 @@ function Card(props){
 function Main(){
     let [products] = useState(data);
     let navigate = useNavigate();
-    let array1 = [pic1, pic2, pic3, pic4, pic5]
+    let array1 = [pic1, pic2, pic3, pic4, pic5, poster]
 
 
     return(
@@ -52,14 +59,12 @@ function Main(){
         <ContentsLayout>
             <Carousel>
                 <Carousel.Item interval={1000}>
-                    <img src={sinchon} text="First slide" />
+                    <img src={popup1} text="First slide" />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
-                    <img src={pic2} text="First slide" />
+                    <img src={popup2} text="First slide" />
                     <Carousel.Caption>
 
                     </Carousel.Caption>
@@ -79,7 +84,7 @@ function Main(){
                 {
                 products.map(function(a, i){
                   return(
-                    <Card data={a} image={array1[i]}/>
+                    <Card data={a} image={array1[i]} key={i}/>
                   )
                 })
                 }
