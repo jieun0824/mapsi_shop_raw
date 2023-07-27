@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR&display=swap');
+
+
+.container{
+
+}
+
+.bg{
+    position: fixed; 
+    top: 0;       
+    left: 0;      
+    width: 100%;  
+    height: 100%; 
+    background-image: url('../img/background.jpg');  
+    background-size: cover;             
+    background-position: center center; 
+    transform: translateZ(0); 
+    will-change: transform; 
+    z-index: -1;
+}
+
+.logo img{
+    width: 13rem;
+    margin: 20px;
+}
+
+.ment{
+    background-color: white;
+    line-height: 1px;
+    text-align: left;
+}
+
+img{
+    width: 80%;
+}
+
+.products{
+    text-align: left;
+    background-color: white;
+    margin: 30px 10px 30px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: grey 1px solid;
+}
+
+
+.contents{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.sub{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: smaller;
+}
+.price{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight:bold ;
+}

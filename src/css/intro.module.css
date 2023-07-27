@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR&display=swap');
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.imagebox{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image{
+    width: 70vw;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.sign{
+    font-family: 'Archivo Black', sans-serif;
+    z-index: 100;
+    position: absolute;
+    bottom: 13%;
+    letter-spacing: 50%;
+    width: 100%;
+
+}
+
+.logo{
+    z-index: 100;
+    position: absolute;
+    top: 10%;
+    width: 90%;
+}
+
+.define{
+    font-family: 'Archivo Black', sans-serif;
+    color: #0014FE;
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+@media(min-width:600px){
+
+    .image{
+        width: 40vw;
+    }
+    .logo{
+        width: 30vw;
+    }
+    .sign{
+        bottom: 30px;
+    }
+    .define{
+        top: 200px;
+    }
+}
