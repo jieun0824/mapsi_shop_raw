@@ -1,9 +1,10 @@
 import styles from './modal.module.css';
-import clothdetail from '../img/clothdetail.png';
+import clothdetail from '../img/clothdetail.jpg';
 import illustickerdetail from '../img/illustickerdetail.png';
 import postdetail from '../img/postdetaiil.png';
 import stickerdetail from '../img/stickerdetail.png'
 import posterImage from '../img/posterImage.png';
+import vintagedetail from '../img/vintagedetail.jpg';
 
 function Modal({ setModalOpen, detailimage, detailcontent, index, offline, online }){
     
@@ -15,7 +16,7 @@ function Modal({ setModalOpen, detailimage, detailcontent, index, offline, onlin
         console.log(detailimage)
         console.log(index)
 
-        let array1 = [clothdetail, stickerdetail, illustickerdetail, postdetail, '', posterImage]
+        let array1 = [clothdetail, stickerdetail, illustickerdetail, postdetail, vintagedetail, posterImage]
     
     
     return(
@@ -31,8 +32,7 @@ function Modal({ setModalOpen, detailimage, detailcontent, index, offline, onlin
                     </div>
                     <div className={styles.detailcontent}>{detailcontent}</div>
                     <div className={styles.shopinfo}>
-                        <div className={styles.offline}><strong>offline: </strong>{offline}</div>
-                        <div className={styles.online}><strong>online: </strong>{online}</div>
+                        <div className={styles.bold}>{online}</div>
                     </div>
                 </div>
             </div>

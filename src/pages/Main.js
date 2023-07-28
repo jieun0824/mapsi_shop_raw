@@ -1,11 +1,6 @@
-import background from '../img/background.jpg';
-import background1 from '../img/background1.jpg';
 import styles from '../css/main.module.css';
-import sinchon from '../img/pic1.jpg';
 import pic1 from '../img/pic4.jpg';
 import pic2 from '../img/pic6.jpg';
-import logo from '../img/logo.png';
-import sticker from '../img/sticker.jpg'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
@@ -20,6 +15,7 @@ import { motion } from "framer-motion";
 import popup1 from '../img/popup1.jpg';
 import popup2 from '../img/popup2.jpg';
 import poster from '../img/poster2.png';
+import mapsi from '../img/wearemapsi.png';
 
 
 function Card(props){
@@ -34,9 +30,13 @@ function Card(props){
         {modalOpen && <Modal setModalOpen={setModalOpen} detailcontent = {props.data.detailcontent} detailimage={props.data.detailimage} index={props.data.id}
         offline={props.data.offline} online={props.data.online}
         />}
-        <div className={styles.sub}>{props.data.content}</div>
-        <div className={styles.bigo}>{props.data.sub}</div>
-        <div className={styles.price}>{props.data.price}</div>
+        <div className={styles.information}>
+          <div className={styles.title}>{props.data.title}</div>
+          <div className={styles.sub}>{props.data.content}</div>
+          <div className={styles.bigo}>{props.data.sub}</div>
+          <div className={styles.price}>{props.data.price}</div>
+        </div>
+
 
 
       </div>
@@ -58,22 +58,20 @@ function Main(){
            >
         <ContentsLayout>
             <Carousel>
-                <Carousel.Item interval={1000}>
-                    <img src={popup1} text="First slide" />
+                <Carousel.Item interval={1000} onClick={()=>{navigate('/mapsi_about')}}>
+                <img src={mapsi} text="First slide"/>
                     <Carousel.Caption>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
-                    <img src={popup2} text="First slide" />
+                    <img src={popup1} text="First slide" />
                     <Carousel.Caption>
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item onClick={()=>{navigate('/mapsi_about')}}>
-                    <img src={background1} text="First slide" />
+                <Carousel.Item >
+                    <img src={popup2} text="First slide" />
                     <Carousel.Caption>
-                    <h3>MAPSI</h3>
-                    <p>맵시는 맵시입니다</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

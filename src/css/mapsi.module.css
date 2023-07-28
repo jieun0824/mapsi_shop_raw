@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bagel+Fat+One&family=Noto+Sans+KR&display=swap');
 
 .bg{
     position: fixed; 
@@ -42,9 +42,27 @@
 }
 
 .text{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
     margin: 0 auto;
+    padding: 50px;
 }
 
 .title{
     font-family: 'Archivo Black', sans-serif;
+    font-size: larger;
+}
+
+.crewcontents{
+
+    margin: 15px;
+}
+
+.role{
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.name{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
 }

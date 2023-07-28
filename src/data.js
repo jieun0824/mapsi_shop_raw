@@ -3,14 +3,14 @@
 let data = [
     {
       id : 0,
-      title : "티셔츠",
-      content : "맵시의 정체성을 담은 물고기 프린팅 티셔츠",
+      title : "T-SHIRT",
+      content : "",
       price : 25000,
-      sub: 'S/M/L',
+      sub: 'S / M / L',
       detailimage: '../img/clothdetail.png',
-      detailcontent: '이 티셔츠는 짱입니다.',
+      detailcontent: `픽셀 금붕어 티셔츠`,
       offline: '신촌 현대백화점 B2 유플렉스 7/29-30',
-      online: 'soon'
+      online: 'online soon'
 
 
 
@@ -19,37 +19,37 @@ let data = [
   
     {
       id : 1,
-      title : "스티커1",
-      content : "스티커1",
+      title : "STICKER A",
+      content : "",
       price : 1000,
       sub: '(90x130mm)',
       detailimage: '../public/clothdetail.png',
-      detailcontent: '이 스티커는 짱입니다.',
+      detailcontent: '픽셀 스티커 (90x130mm)',
       offline: '신촌 현대백화점 B2 유플렉스 7/29-30',
-      online: 'soon'
+      online: 'online soon'
 
     },
     {
         id : 2,
-        title : "스티커2",
-        content : "스티커2",
+        title : "STICKER B",
+        content : "",
         price : 1000,
         sub: '(90x90mm)',
         detailimage: '../public/clothdetail.png',
-        detailcontent: '이 스티커는 짱입니다.',
+        detailcontent: '뿌꾸뿌꾸 스티커 (90x90mm)',
         offline: '신촌 현대백화점 B2 유플렉스 7/29-30',
-        online: 'soon'
+        online: 'online soon'
 
       },
       {
         id : 3,
-        title : "엽서",
-        content : "맵시의 정체성을 담은 물고기 엽서",
+        title : "POSTCARD",
+        content : "",
         price : 1500,
         detailimage: '../public/clothdetail.png',
-        detailcontent: '이 엽서는 짱입니다.',
+        detailcontent: 'RED FISH 엽서',
         offline: '신촌 현대백화점 B2 유플렉스 7/29-30',
-        online: 'soon'
+        online: 'online soon'
   
   
   
@@ -57,23 +57,23 @@ let data = [
       },
       {
         id : 4,
-        title : "빈티지 옷",
-        content : "직접 셀렉한 빈티지 옷",
+        title : "VINTAGE CLOTHES",
+        content : "",
         price : '???',
         detailimage: '../public/clothdetail.png',
-        detailcontent: '이 옷는 짱입니다.',
+        detailcontent: '빈티지 옷',
         offline: '신촌 현대백화점 B2 유플렉스 7/29-30',
         online: 'offline only'
       },
       {
         id : 5,
-        title : "포스터",
-        content : "포스터",
-        price : '???',
+        title : "POSTER",
+        content : "",
+        price : '5000',
         detailimage: '../public/clothdetail.png',
-        detailcontent: '이 포스터는 짱입니다.',
+        detailcontent: 'A3 포스터',
         offline: 'online only',
-        online: 'soon'
+        online: 'online only'
       }
   ] 
 

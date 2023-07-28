@@ -35,10 +35,11 @@ img{
 }
 
 .products{
+    font-family: 'Archivo Black', sans-serif;
     text-align: left;
     background-color: white;
     margin: 30px 10px 30px 10px;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 10px;
     border: grey 1px solid;
 }
@@ -50,10 +51,26 @@ img{
 }
 
 .sub{
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
     font-size: smaller;
 }
 .price{
     font-family: 'Archivo Black', sans-serif;
     font-weight:bold ;
+}
+
+.title{
+    font-family: 'Archivo Black', sans-serif;
+    color: #0015FE;
+}
+
+.information{
+    margin: 10px;
+}
+
+.bigo{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
 }
