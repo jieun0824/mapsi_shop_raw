@@ -2,14 +2,14 @@
 
 
 .container{
-
+    width: 100vw;
 }
 
 .bg{
     position: fixed; 
     top: 0;       
     left: 0;      
-    width: 100%;  
+    width: 100vw;  
     height: 100%; 
     background-image: url('../img/background.jpg');  
     background-size: cover;             
@@ -35,6 +35,7 @@ img{
 }
 
 .products{
+    width: auto;
     font-family: 'Archivo Black', sans-serif;
     text-align: left;
     background-color: white;
@@ -46,7 +47,7 @@ img{
 
 
 .contents{
-    width: 100%;
+    width: 100vw;
     margin-bottom: 5px;
 }
 

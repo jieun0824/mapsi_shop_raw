@@ -18,15 +18,18 @@ function ContentsLayout({children}){
 
     return(
         <div className ={styles.container} >
-            <div className={styles.bg}></div>
-            {/* <div className={styles.progressBar} style={style}></div> */}
-            <div className={styles.wrap}>
-                <div className={styles.logo} onClick={()=>{navigate('/main')}}>
-                <img src={logo}/>
-                </div>
-                {children}
+                <div className={styles.bg}></div>
+                {/* <div className={styles.progressBar} style={style}></div> */}
+                <div className={styles.wrap}>
+                    <div className={styles.logo} onClick={()=>{navigate('/main')}}>
+                        <img src={logo}/>
+                    </div>
+                    <div className={styles.children}>
+                        {children}
+                    </div>
 
-            </div>
+
+                </div>
                 <footer>
                     <div className={styles.copyright}>
                     Copyright 2023.MAPSI.All right reserved.<br/>

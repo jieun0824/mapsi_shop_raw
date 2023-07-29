@@ -66,3 +66,10 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 800;
 }
+
+@media(min-width:600px){
+
+    .logo{
+        width: 350px;
+    }
+}
